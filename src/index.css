@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+
+.task-item {
+    transition:  background-color 0.1s ease, box-shadow 0.1s ease !important; 
+}
+
+.task-item:hover {
+    background-color: #f0f0f0 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.task-count-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 2px;
+    top: -18px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.3em 0.5em;
+}
+
+/* index.css */
+
+.task-column {
+    border-radius: 0.25rem;
+}
+
+.task-column.pending .task-column-content {
+background-color: #888888; 
+color: white;
+}
+
+.task-column.ongoing .task-column-content{
+background-color: #F0F0F0; 
+color: black;
+}
+
+.task-column.completed .task-column-content{
+background-color: #FFE8DF; 
+color: white;
+}
+
+.custom-search-btn, .custom-reset-button {
+    background-color: #888888; 
+    border: none; 
+    color: white; 
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-create-form .create-form {
+    display: none;
+}
+
+.floating-create-form.open .create-form {
+    display: block;
+}
+
+.floating-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container to center the search and reset buttons */
+.search-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    margin-bottom: 20px; /* Space below the search container */
+}
+
+
+/* Space between search and reset buttons */
+.ms-2 {
+    margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+.custom-search-btn:hover,
+.custom-reset-button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
